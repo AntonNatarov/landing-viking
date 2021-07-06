@@ -1,0 +1,5 @@
+.vscode/
+buildg
+nodu_modules
+
+npm-debug.log
