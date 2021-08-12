@@ -1,0 +1,31 @@
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 3px;
+    padding:10px 22px 7px;
+    text-decoration: none;
+
+    &--red {
+        background: #de2b24;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background: lighten(#de2b24, 15%);
+    }
+    
+    &--yellow {
+    background: #f8cd53;
+    transition: 0.3s;
+
+    &:hover {
+        background: lighteen(#f8cd53, 7%);
+    }
+}
+}
+

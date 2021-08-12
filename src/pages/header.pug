@@ -1,0 +1,26 @@
+header.header
+    .header__top
+        .container
+            .contacts
+                a.contact(href="tel:+380637500000")
+                    i.fas.fa-mobile-alt.contact__icon()
+                    span.contact__text +38(063)750-00-00
+
+                a.contact(href="mailto:Valh@llBuisness.co")
+                    i.fas.fa-at.contact__icon.contact__icon--email()
+                    span.contact__text Valhall@Buisness.co
+
+                a.contact(href="https://www.facebook.com/ekstraver")
+                    i.fab.fa-facebook-square.contact__icon()  
+    .container
+        .header__bottom 
+            .logo: img.picture__logo(src="images/logo.png" alt="logo")
+            nav.nav
+                - var items = ['Home', 'About Us', 'Our Aprocch', 'Our Work'];
+                each item in items
+                    if item === 'Home'
+                        a.nav__link.nav__link--active(href="#")=item
+                    else
+                        a.nav__link(href="#")=item
+
+            a.button.header__button.button--red(href="#") Free consulting        
